@@ -137,7 +137,8 @@ Authorization: Bearer <jwt token>
     * JWT：将 Token 和 Payload 加密后存储于客户端，服务端只需要使用密钥解密进行校验（校验也是 JWT 自己实现的）即可，不需要查询或者减少查询数据库，因为 JWT 自包含了用户信息和加密的数据。
 
 ## JWT 实现
-github地址：https://github.com/cr7258/jwt-lab，本例使用 JJWT（Java JWT）来创建和验证 JSON Web Token（JWT）。
+github地址：https://github.com/cr7258/jwt-lab，
+本例使用 JJWT（Java JWT）来创建和验证 JSON Web Token（JWT）。
 
 ### 添加依赖
 创建一个 Maven 项目并添加相关依赖：
@@ -453,7 +454,7 @@ public class LoginController {
 
 ```sh
 ❯ curl http://localhost:8080/user/hello
-请携带token%
+请携带token
 ```
 获取 token：
 
